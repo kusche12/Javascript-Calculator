@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="page-wrap">
+            <div class="calculator">
+                <div id="display">
+                    <h2 id="display-total"></h2> <!-- Total amount -->
+                    <h2 id="display-current">0</h2> <!-- Current amount -->
+                </div>
+                <button class="number btn" id="zero" onclick="appendNumber('0')">0</button>
+                <button class="number btn" id="one" onclick="appendNumber('1')">1</button>
+                <button class="number btn" id="two" onclick="appendNumber('2')">2</button>
+                <button class="number btn" id="three" onclick="appendNumber('3')">3</button>
+                <button class="number btn" id="four" onclick="appendNumber('4')">4</button>
+                <button class="number btn" id="five" onclick="appendNumber('5')">5</button>
+                <button class="number btn" id="six" onclick="appendNumber('6')">6</button>
+                <button class="number btn" id="seven" onclick="appendNumber('7')">7</button>
+                <button class="number btn" id="eight" onclick="appendNumber('8')">8</button>
+                <button class="number btn" id="nine" onclick="appendNumber('9')">9</button>
+                <button class="number btn" id="decimal" onclick="appendDecimal()">.</button>
+
+                <button class="math btn" id="divide" onclick="doMath('/')">/</button>
+                <button class="math btn" id="multiply" onclick="doMath('x')">x</button>
+                <button class="math btn" id="subtract" onclick="doMath('-')">-</button>
+                <button class="math btn" id="add" onclick="doMath('+')">+</button>
+                <button class="general btn btn-danger" id="clear" onclick="clearDisplay()">AC</button>
+                <button class="general2 btn btn-primary" id="equals" onclick="equals()">=</button>
+            </div>
+        </div>
+        <script src="js-script.js"></script>
+    </body>
+</html>
